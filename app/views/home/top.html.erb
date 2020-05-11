@@ -1,0 +1,10 @@
+<h1>Home#top</h1>
+<p>Find me in app/views/home/top.html.erb</p>
+<%= month_calendar events: @meetings do |date, meetings| %>
+<%= date.day %>
+<% meetings.each do |meeting| %>
+  <div>
+   <%= meeting.name %>
+  </div>
+ <% end %>
+<% end %>
