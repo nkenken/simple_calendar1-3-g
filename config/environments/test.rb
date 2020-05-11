@@ -11,7 +11,7 @@ Rails.application.configure do
   # Do not eager load code on boot. This avoids loading your whole application
   # just for the purpose of running a single test. If you are using a tool that
   # preloads Rails for running tests, you may have to set it to true.
-  config.eager_load = false
+  config.eager_load =true
 
   # Configure public file server for tests with Cache-Control for performance.
   config.public_file_server.enabled = true
@@ -21,19 +21,19 @@ Rails.application.configure do
 
   # Show full error reports and disable caching.
   config.consider_all_requests_local       = true
-  config.action_controller.perform_caching = false
+  config.action_controller.perform_caching = true
   config.cache_store = :null_store
 
   # Raise exceptions instead of rendering exception templates.
-  config.action_dispatch.show_exceptions = false
+  config.action_dispatch.show_exceptions = true
 
   # Disable request forgery protection in test environment.
-  config.action_controller.allow_forgery_protection = false
+  config.action_controller.allow_forgery_protection = true
 
   # Store uploaded files on the local file system in a temporary directory.
   config.active_storage.service = :test
 
-  config.action_mailer.perform_caching = false
+  config.action_mailer.perform_caching = true
 
   # Tell Action Mailer not to deliver emails to the real world.
   # The :test delivery method accumulates sent emails in the
